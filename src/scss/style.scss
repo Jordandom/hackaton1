@@ -8,6 +8,7 @@ body {
     margin: 0;
     width: 100vw;
     background-color: blanchedalmond;
+    font-size: 16px;
   }
 
 
@@ -26,18 +27,27 @@ body {
     background-color: #996515;
     position: fixed;
     z-index: 2;
+
+    @media (max-width: 720px) {
+      position: static;
+    }
     
     &__logo {
         height: 7rem;
         margin-left: 10%;
+
+        @media (max-width: 720px) {
+          margin-left: 40%;
+        }
     }
 
     &__container {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        margin-right: 10%;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      margin-right: 10%;
+
     }
 
     &__link {
@@ -45,6 +55,11 @@ body {
         font-size: 1.5rem;
         padding: 1rem;
         color: whitesmoke;
+
+        @media (max-width: 720px) {
+          color: #996515;
+          text-align: center;
+        }
 
         &:hover {
             color: black;
@@ -71,8 +86,7 @@ body {
   }
 
   h3 {
-    margin: 0 auto;
-    margin-top: 2%;
+    margin: 4% auto;
     width: 100%;
     text-align: center;
     background-color: whitesmoke;
@@ -84,26 +98,36 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
 .menu-container__coffee {
   width: 25%;
-  margin: 0 2%;
+  margin: 2% 2%;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
 
+  @media (max-width: 720px) {
+    width: 90%;
+  }
+
   h4 {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(88, 88, 88);
   }
 
   &__type {
     width: 60%;
+
   }
 
   p {
@@ -269,6 +293,10 @@ input {
     align-items: center;
     margin: 10% 15%;
 
+    @media (max-width: 730px) {
+      padding-top: 5%;
+    } 
+
 
     &__wrap__heading{
         text-align: center;
@@ -319,4 +347,11 @@ h2 {
     text-align: center;
     padding-top: 2%;
 
+}
+
+.card-deck {
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
