@@ -4,15 +4,14 @@
 
 body {
     margin: 0;
-    width: 100vh;
+    width: 100vw;
     background-color: blanchedalmond;
     font-family: 'Advent Pro', sans-serif;
   }
 
-main {
-    margin: 5% 10%;
-  }
-  
+
+  //NAVBAR
+
 
 .nav {
     display: flex;
@@ -45,9 +44,17 @@ main {
         font-size: 1.5rem;
         padding: 1rem;
         color: whitesmoke;
+
+        &:hover {
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+        }
     }
   box-sizing: border-box;
 }
+
+// FOOTER
 
 .footer {
   width: 100vw;
@@ -71,6 +78,11 @@ main {
       color: whitesmoke;
       margin: 0 5%;
     }
+    a:hover {
+        color: black;
+        text-decoration: none;
+        font-weight: 900;
+    }
   }
   
 
@@ -87,6 +99,63 @@ main {
 
     a {
       color:whitesmoke;
+
+    
     }
+    a:hover {
+        color: black;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
   }
 }
+
+
+// DIV HEADING
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 15%;
+
+    &__wrap__heading{
+        text-align: center;
+    }
+    
+
+    &__img {
+        width: 80%;
+
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__wrap__info {
+        text-align: center;
+        padding: 1rem;
+
+    }
+}
+
+// COFFEE CONTAINER
+
+.coffee-container__heading {
+    padding: 2rem 6rem;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 6rem;
+}
+
+.card {
+    flex-basis: 40%;
+}
+
+
